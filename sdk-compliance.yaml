@@ -208,6 +208,9 @@ features:
     status: implemented
     symbols:
       - GoTrueClient.signInWithPasskey
+  auth.passkey.delete_passkey: not_implemented
+  auth.passkey.list_passkeys: not_implemented
+  auth.passkey.update_passkey: not_implemented
   auth.passkey_admin.delete_passkey:
     status: implemented
     symbols:
@@ -307,6 +310,7 @@ features:
     status: implemented
     symbols:
       - GoTrueClient.verifyOtp
+  auth.sign_in.concurrent_pkce_flows: not_implemented
 
   # database
   database.configuration.auto_retry:
@@ -612,6 +616,7 @@ features:
       - default.from
   storage.analytics.update_namespace_properties:
     status: not_implemented
+  storage.analytics.access_catalog: not_implemented
   storage.errors.error_codes:
     status: implemented
     symbols:
@@ -836,6 +841,7 @@ features:
       - default.createSignedUrl
       - default.createSignedUrls
       - default.getPublicUrl
+  storage.file_buckets.request_cancellation: not_implemented
   storage.vector_buckets.access_vector_index:
     status: implemented
     symbols:
@@ -1096,3 +1102,5 @@ features:
     symbols:
       - FunctionsClient.invoke
       - FunctionInvokeOptions
+  # Newly synced from the canonical spec; no local group yet, place manually.
+  storage.configuration.auto_retry: not_implemented
